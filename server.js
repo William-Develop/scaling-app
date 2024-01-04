@@ -8,7 +8,7 @@ app.use(helmet()); // Secure Express apps with various HTTP headers
 app.get("/",(req, res) => {
     let i = 0;
     while(i < 1e7) i++;
-    res.send(`✨ Hello from worker number: ${process.pid} ✨!\n`)
+    res.send(`✨ Hello from worker number: ${process.pid} ✨\n This is a Scaling demo!`)
 });
 
 // Exports function that starts the server.
